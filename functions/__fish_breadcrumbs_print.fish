@@ -8,7 +8,7 @@ function __fish_breadcrumbs_print -a seperator
             eval $func
         end
         
-        if set -q _fish_prompt_addins[1] 
+        if set -q _fish_prompt_crumbs[1] 
             printf $seperator
         end
     end
