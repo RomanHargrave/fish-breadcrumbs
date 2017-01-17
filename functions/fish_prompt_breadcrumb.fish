@@ -13,7 +13,7 @@ function fish_prompt_breadcrumb -a action func
                 end
             case a add
                 if not contains $func $__fish_prompt_crumbs
-                    set -g __fish_prompt_crumbs $_fish_prompt_crumbs $func
+                    set -g __fish_prompt_crumbs $__fish_prompt_crumbs $func
                 end
             case l list
                 echo $__fish_prompt_crumbs' : '
