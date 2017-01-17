@@ -5,10 +5,8 @@ function __fish_breadcrumbs_print -a seperator
 
     if set -q __fish_prompt_crumbs
         for func in $__fish_prompt_crumbs
+            set_color normal
             eval $func
-        end
-        
-        if set -q _fish_prompt_crumbs[1] 
             printf $seperator
         end
     end
